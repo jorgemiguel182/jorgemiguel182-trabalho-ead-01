@@ -57,8 +57,8 @@
 			<figure>
 				<img src='<?php echo $linkParaImagem;?>'
 					 alt='<?php echo $nomeDaBanda;?>'
-					 class='imagem'>
-				<figcaption><?php echo $nomeDaBanda;?>'</figcaption>
+					 class='imagem'
+				     	 title='<?php echo $nomeDaBanda;?>'>
 			</figure>
 			
 			<hr>
