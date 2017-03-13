@@ -5,6 +5,8 @@
 		<?php
 			$nomeDaBanda 					= $_POST['nomeDaBanda'];
 			$linkParaImagem					= $_POST['linkParaImagem'];
+			$imagemTilt						= $_POST['imagemTilt'];
+			$imagemDesc						= $_POST['imagemDesc'];
 			$integrante1Nome				= $_POST['integrante1Nome'];
 			$integrante1DataDeNascimento	= $_POST['integrante1DataDeNascimento'];
 			$integrante1Instrumento			= $_POST['integrante1Instrumento'];
@@ -25,9 +27,74 @@
 		
 		<style>
 			body{
-				color: 				<?php echo $corTexto; ?>
-				background-color: 	<?php echo $corFundo; ?>
+				color: 				<?php echo $corTexto; ?>;
+				background-color: 	<?php echo $corFundo; ?>;
+			}
+			
+			table, td {
+				margin: 0 auto;			
+				border: solid 2px;
+			}
+			
+			.container {
+				width: 800px;
+				margin: 0 auto;
+			}
+			
+			.titulo {
+				text-align: center;
+			}
+			
+			.imagem {
+				width: 100%;
 			}
 		</style>
 	</head>
+	
+	<body>
+		<div class='container'>
+			<h1 class='titulo'><?php echo $nomeDaBanda;?></h1>
+				
+		
+			<figure>
+				<img src='<?php echo $linkParaImagem;?>'
+					 alt='<?php echo $imagemTilt;?>'
+					 class='imagem'>
+				<figcaption><?php echo $imagemDesc;?>'</figcaption>
+			</figure>
+			
+			<hr>
+			
+			<h1>Biografia da Banda</h1>
+			<p><?php echo $biografiaDaBanda;?></p>
+			
+			<hr>
+			
+			<h1>Integrantes</h1>
+			<table>
+				<thead>
+					<th>Nome</th>
+					<th>Data de Nascimento</th>
+					<th>Instrumento</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td> <?php echo $integrante1Nome;?></td>
+						<td> <?php echo $integrante1DataDeNascimento;?></td>
+						<td> <?php echo $integrante1Instrumento;?></td>
+					</tr>
+					<tr>
+						<td> <?php echo $integrante2Nome;?></td>
+						<td> <?php echo $integrante2DataDeNascimento;?></td>
+						<td> <?php echo $integrante2Instrumento;?></td>
+					</tr>
+					<tr>
+						<td> <?php echo $integrante3Nome;?></td>
+						<td> <?php echo $integrante3DataDeNascimento;?></td>
+						<td> <?php echo $integrante3Instrumento;?></td>
+					</tr>
+				</tbody>
+			</table>		
+		</div>	
+	</body>	
 </html>

@@ -12,53 +12,60 @@
 		p{
 			margin-bottom: -1px;
 		}
+		.form{
+			display: block;
+		}
 	</style>
 </head>
 
 <body>
-	<h3>Cadastro</h3>
-	<form  action='saida.php' method='POST'>
+	<h3>Cadastro1</h3>
+	<form  class='form'  action='saida.php' method='POST'>
 	
 	<p>Nome da banda:</p>
-	<input type='text' name='nomeDaBanda'>
+	<input class='form' type='text' name='nomeDaBanda'>
 	
 	<p><em>Link</em> para imagem:</p>
-	<input type='text' name='linkParaImagem'>
+	<input class='form'  type='text' name='linkParaImagem'>
+	<label>Titulo da Imagem:</label>
+	<input type='text' name='imagemTilt'>
+	<label>Descrição da Imagem:</label>
+	<input type='text' name='imagemDesc'>
 	
 	<p><strong>Integrante1</strong> - nome:</p>
-	<input type='text' name='integrante1Nome'>
+	<input class='form' type='text' name='integrante1Nome'>
 	
 	<p><strong>Integrante1</strong> - data de nascimento:</p>
-	<input type='text' name='integrante1DataDeNascimento'>
+	<input class='form' type='date' name='integrante1DataDeNascimento'>
 	
 	<p><strong>Integrante1</strong> - instrumento:</p>
-	<input type='text' name='integrante1Instrumento'>
+	<input class='form' type='text' name='integrante1Instrumento'>
 
 	<p><strong>Integrante2</strong> - nome:</p>
-	<input type='text' name='integrante2Nome'>
+	<input class='form' type='text' name='integrante2Nome'>
 	
 	<p><strong>Integrante2</strong> - data de nascimento:</p>
-	<input type='text' name='integrante2DataDeNascimento'>
+	<input class='form' type='date' name='integrante2DataDeNascimento'>
 	
 	<p><strong>Integrante2</strong> - instrumento:</p>
-	<input type='text' name='integrante2Instrumento'>
+	<input class='form' type='text' name='integrante2Instrumento'>
 
 	<p><strong>Integrante3</strong> - nome:</p>
-	<input type='text' name='integrante3Nome'>
+	<input class='form' type='text' name='integrante3Nome'>
 	
 	<p><strong>Integrante3</strong> - data de nascimento:</p>
-	<input type='text' name='integrante3DataDeNascimento'>
+	<input class='form' type='date' name='integrante3DataDeNascimento'>
 	
 	<p><strong>Integrante3</strong> - instrumento:</p>
 	<input type='text' name='integrante3Instrumento'>	
 	
 	<p>Biografia da banda</p>
-	<textarea rows="25"
+	<textarea rows="10"
 			  cols="70"
 			  name='biografiaDaBanda'>
 	</textarea>
 	
-	<p>Cor de fundo da pagina</p>
+	<p class='form'>Cor de fundo da pagina</p>
 	<select name='corFundo' id='corFundo'>
 		<option value='blue'>Azul</option>
 		<option value='yellow'>Amarelo</option>
@@ -68,7 +75,7 @@
 		<option value='red'>Vermelho</option>
 	</select>
 	
-	<p>Cor do texto da pagina</p>
+	<p class='form'>Cor do texto da pagina</p>
 	<select name='corTexto' id='corTexto'>
 		<option value='blue'>Azul</option>
 		<option value='yellow'>Amarelo</option>
