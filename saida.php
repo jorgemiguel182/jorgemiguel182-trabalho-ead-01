@@ -5,8 +5,6 @@
 		<?php
 			$nomeDaBanda 					= $_POST['nomeDaBanda'];
 			$linkParaImagem					= $_POST['linkParaImagem'];
-			$imagemTilt						= $_POST['imagemTilt'];
-			$imagemDesc						= $_POST['imagemDesc'];
 			$integrante1Nome				= $_POST['integrante1Nome'];
 			$integrante1DataDeNascimento	= $_POST['integrante1DataDeNascimento'];
 			$integrante1Instrumento			= $_POST['integrante1Instrumento'];
@@ -58,9 +56,9 @@
 		
 			<figure>
 				<img src='<?php echo $linkParaImagem;?>'
-					 alt='<?php echo $imagemTilt;?>'
+					 alt='<?php echo $nomeDaBanda;?>'
 					 class='imagem'>
-				<figcaption><?php echo $imagemDesc;?>'</figcaption>
+				<figcaption><?php echo $nomeDaBanda;?>'</figcaption>
 			</figure>
 			
 			<hr>
